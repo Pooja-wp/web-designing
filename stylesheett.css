@@ -1,0 +1,201 @@
+nav ul {
+    padding-left: 10px;
+    margin-left: 0px;
+    position: fixed;
+    border-top: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 8px;
+    color: powderblue;
+    font-variant: normal;
+}
+
+.site-img img {
+    width: 100%;
+    flex: auto;
+}
+
+.heading1 {
+    font-size: 250%;
+    padding-left: 38%;
+    font-weight: bold;
+    color: burlywood;
+}
+
+.content {
+    position: relative;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.content .sec {
+    width: 280px;
+    position: relative;
+    height: 290px;
+    background: beige;
+    padding: 20px 8px;
+    margin: 30px 6px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.content {
+    display: inline-block;
+    padding: 15%;
+    width: 100%;
+}
+
+.swiper {
+    width: 90%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 100%;
+    padding-right: 60px;
+}
+
+.menu .title {
+    font-weight: bolder;
+    font-size: 15px;
+    padding-top: 6%;
+}
+
+.menu ul li {
+    font-size: 10px;
+    padding-left: 2%;
+}
+
+.main-carousel {
+    margin: 2px auto;
+    width: 250px;
+    height: 90px;
+    position: relative;
+    perspective: 3000px;
+}
+
+#section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear
+}
+
+#section:hover {
+    animation-play-state: paused
+}
+
+#section figure {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50%px;
+    left: 20px;
+    top: 10px;
+    overflow: hidden;
+}
+
+#section figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(320px)
+}
+
+#section figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(320px)
+}
+
+#section figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(320px)
+}
+
+#section figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(320px)
+}
+
+#section figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(320px)
+}
+
+#section figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(320px)
+}
+
+#section figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(320px)
+}
+
+.swiper-slider img:hover {
+    transform: scale(1.2, 1.2)
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+.heading2 {
+    padding-top: 28%;
+    padding-left: 35%;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.heading2 a {
+    color: burlywood;
+}
+
+.book-section {
+    max-width: 1024px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+}
+
+.imagegroup {
+    display: flex;
+    width: 100%;
+}
+
+.imagegroup img {
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.imagegroup {
+    animation: travel 20s ease-in-out infinite;
+}
+
+@keyframes travel {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
